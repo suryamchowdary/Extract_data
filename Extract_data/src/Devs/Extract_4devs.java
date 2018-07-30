@@ -12,7 +12,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Extract_4devs {
 	
@@ -130,7 +134,7 @@ public static void loaddata() throws IOException, InterruptedException
 public static void getdata()
 {
 Driver.close();	
-/*System.setProperty("webdriver.chrome.driver", "C:\\Users\\ksuryam1\\Desktop\\JAVA_SELENIUM\\chromedriver_win32\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\ksuryam1\\Desktop\\JAVA_SELENIUM\\chromedriver_win32\\chromedriver.exe");
 Driver = new ChromeDriver();
 Driver.navigate().to("http://sisamil9.qa.amil.com.br");
 WebDriverWait wait = new WebDriverWait(Driver, 1000);
@@ -140,7 +144,7 @@ System.out.println("found element");
 WebElement name1 = Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input"));
 System.out.println("Element Found");
 
-name.sendKeys(a);
+/*name.sendKeys(a);*/
 Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input")).sendKeys("sukode");
 Driver.findElement(By.name("Senha")).sendKeys("Aug@2017");
 Driver.findElement(By.id("Submit1")).click();
@@ -163,6 +167,6 @@ Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
  Driver.switchTo().defaultContent();
  System.out.println();
  
- Driver.findElement(By.id("num_cpf")).sendKeys("565.452.039-32");*/
+ Driver.findElement(By.id("num_cpf")).sendKeys("565.452.039-32");
 }
 }
