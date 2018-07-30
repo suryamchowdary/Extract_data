@@ -134,7 +134,7 @@ public static void loaddata() throws IOException, InterruptedException
 public static void getdata()
 {
 Driver.close();	
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\ksuryam1\\Desktop\\JAVA_SELENIUM\\chromedriver_win32\\chromedriver.exe");
+/*System.setProperty("webdriver.chrome.driver", "C:\\Users\\ksuryam1\\Desktop\\JAVA_SELENIUM\\chromedriver_win32\\chromedriver.exe");
 Driver = new ChromeDriver();
 Driver.navigate().to("http://sisamil9.qa.amil.com.br");
 WebDriverWait wait = new WebDriverWait(Driver, 1000);
@@ -142,16 +142,16 @@ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='divL
 System.out.println("found element");
 //Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 WebElement name1 = Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input"));
-System.out.println("Element Found");
+System.out.println("Element Found");*/
 
-/*name.sendKeys(a);*/
+/*name.sendKeys(a);
 Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input")).sendKeys("sukode");
 Driver.findElement(By.name("Senha")).sendKeys("Aug@2017");
 Driver.findElement(By.id("Submit1")).click();
-Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);*/
 
 
- Driver.findElement(By.linkText("Ok, entendi")).click();
+/* Driver.findElement(By.linkText("Ok, entendi")).click();
  //Driver.findElement(By.xpath("//a[Contains(text(),'Ok,entendi')")).click();
  Driver.findElement(By.id("mostraMenu")).click();
  Driver.switchTo().frame(Driver.findElement(By.name("menu")));
@@ -167,6 +167,6 @@ Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
  Driver.switchTo().defaultContent();
  System.out.println();
  
- Driver.findElement(By.id("num_cpf")).sendKeys("565.452.039-32");
+ Driver.findElement(By.id("num_cpf")).sendKeys("565.452.039-32");*/
 }
 }
