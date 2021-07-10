@@ -144,11 +144,6 @@ System.out.println("found element");
 WebElement name1 = Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input"));
 System.out.println("Element Found");*/
 
-/*name.sendKeys(a);
-Driver.findElement(By.xpath("//*[@id='divLoginForm']/div[2]/div/input")).sendKeys("sukode");
-Driver.findElement(By.name("Senha")).sendKeys("Aug@2017");
-Driver.findElement(By.id("Submit1")).click();
-Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);*/
 
 
 /* Driver.findElement(By.linkText("Ok, entendi")).click();
@@ -156,9 +151,9 @@ Driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);*/
  Driver.findElement(By.id("mostraMenu")).click();
  Driver.switchTo().frame(Driver.findElement(By.name("menu")));
  Driver.findElement(By.linkText("Contratos e Beneficiarios")).click();
- Driver.findElement(By.linkText("MovimentaÁ„o Operadora")).click();
+ Driver.findElement(By.linkText("Movimenta√ß√£o Operadora")).click();
  Driver.findElement(By.linkText("Cadastro")).click();
- Driver.findElement(By.linkText("Inclus„o de Titular")).click();
+ Driver.findElement(By.linkText("Inclus√£o de Titular")).click();
  Driver.switchTo().defaultContent();
  Driver.switchTo().frame(Driver.findElement(By.xpath("//*[@id='principal']")));
  WebElement Contract = Driver.findElement(By.name("num_contrato"));
